@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>PINK</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet">
+<link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+    
+    <article class="header-navigation">
+        <div class="find-programm-logotype-tablet"></div>
+    <ul class="header-menu">
+<li class="header-menu-item">ГЛАВНАЯ
+        </li>
+<li class="header-menu-item">КАТАЛОГ ПРОДУКЦИИ</li>
+<li class="header-menu-item"> ПОДБОР ПРОГРАММЫ</li>
+    </ul>
+    </article>
+     </header>
+    
+    <main>
+        <article class="catalog">
+            <h1 class="catalog__headline">Каталог продукции</h1>
+            
+            <ul class="catalog__list">
+                <template class="template-item">
+                <li class="catalog__list__item">
+                    <div class="catalog__list__item__wrapper">
+                 <div class="catalog__list__item__image">
+                     <img class="catalog__list__item__image__picture" src="pictures/catalog-2-desktop.png">
+                        </div>
+                    <h2 class="catalog__list__item__headline">Cat Energy PRO <br>
+                        500 г</h2>
+                        <ul class="catalog__list__item__description">
+                            <li class="catalog__list__item__description--option"><p>Объем</p> <p class="size">500г</p></li>
+                            <li class="catalog__list__item__description--option"><p>Вкус</p>  <p class="taste">Курица</p></li>
+                            <li class="catalog__list__item__description--option"><p>Цена</p> <p class="price">700 Р.</p></li>
+                            </ul>
+                            <div>
+                    <button class="catalog__list__item__button">ЗАКАЗАТЬ</button></div>
+                            
+                        </div>
+                </li>
+                </template>
+                
+            </ul>
+        </article>
+        
+    <article class="additional-suppliment">
+        <fieldset class="additional-suppliment__fieldset">
+            <legend class="additional-suppliment__legend">Дополнительные товары</legend>
+            <section class="additional-suppliment__wrapper">
+                <ul class="additional-suppliment__list">
+                <li class="additional-suppliment__list--type">САХАРОЗАМЕНИТЕЛЬ</li>
+                <li class="additional-suppliment__list--amount"><p>1 упаковка (100г)</p>
+                    <p>200р</p></li>
+                    <li class="additional-suppliment__list--button"><button>ЗАКАЗАТЬ</button></li>
+                    </ul>
+            </section>
+        </fieldset>
+        </article>
+        
+        <article class="partnership">
+            <div class="partnership__wrapper">
+                <div class="partnership__textcontent">ПРИГЛАШАЕМ <br>
+К СОТРУДНИЧЕСТВУ <br>
+ДИЛЕРОВ!</div>
+                <ul class="partnership__address">
+                    <li>ул. Большая Конюшенная, д. 19/8</li>
+                    <li>Санкт-Петербург</li>
+                </ul>
+            </div>
+        </article>
+        
+        <article id="map">
+        </article>
+        <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 59.938040, lng: 30.323596};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">
+    </script>
+        
+    </main>
+    <footer class="page-footer">
+     <section class="page-footer__wrapper">
+        <div class="page-footer__item--one"></div>
+         
+         <ul class="page-footer__item--two">
+             <li class="page-footer__item--two--first"></li>
+             <li class="page-footer__item--two--second"></li>
+             <li class="page-footer__item--two--third"></li>
+         </ul>
+         
+         <div class="page-footer__item--three">
+             <p class="page-footer--text">HTML Academy</p>
+             <div class="page-footer__item--three--sign"></div>
+         </div>
+         </section>  
+    </footer>
+    <script src="catalot-item.js"></script>
+    </body>
+
+
+
