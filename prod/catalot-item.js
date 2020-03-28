@@ -1,3 +1,4 @@
+(function () {
 var similarListElement = document.querySelector('.catalog__list');
 var similarWrapperTemplate = document.querySelector('.template-item')
 .content.querySelector('.catalog__list__item');
@@ -76,5 +77,26 @@ for (let i = 0; i < 7; i++) {
     
     similarListElement.insertBefore(catalogItem,lastItem);
 };
-console.log(objects)
+
+const imagesSizes = document.querySelectorAll('.catalog__list__item__image__picture');
+const arrayImagesSizes = Array.from(imagesSizes);
+   
+var renderSize = function() {    arrayImagesSizes.pop(arrayImagesSizes.indexOf(arrayImagesSizes.length));
+    
+    var indices = [];
+    var element = arrayImagesSizes[0];
+    var idx = arrayImagesSizes.indexOf(element);
+    for (var i = 0; i < 7 ; i = i + 2) {
+        indices.push(arrayImagesSizes[idx + i])
+    
+
+    }
+    console.log(indices)
+indices.forEach((it) => {it.style = "width:66px; height:80px"});
+                            };
+//    window.addEventListener('resize', function() {
+//      renderSize();  
+//    });
+    
+})();
 
